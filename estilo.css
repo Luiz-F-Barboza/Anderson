@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff; /* Mudança para um fundo branco */
+  padding: 24px;
+  border-radius: 12px; /* Bordas mais arredondadas */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+  transition: transform 0.2s; /* Transição suave ao passar o mouse */
+}
+
+.container:hover {
+  transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+h1 {
+  font-size: 28px; /* Aumentar o tamanho do título */
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #3b82f6; /* Cor do título */
+}
+
+.campo-saida {
+  width: 100%;
+  padding: 12px; /* Aumentar o padding */
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px; /* Aumentar o tamanho da fonte */
+  background-color: #f9fafb; /* Fundo claro para o campo de saída */
+  transition: border-color 0.3s; /* Transição suave para a borda */
+}
+
+.campo-saida:focus {
+  border-color: #3b82f6; /* Cor da borda ao focar */
+  outline: none; /* Remover contorno padrão */
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 16px; /* Aumentar o espaço abaixo do range */
+}
+
+.info-tamanho {
+  font-size: 16px; /* Aumentar o tamanho da fonte */
+  margin-bottom: 16px;
+  color: #4b5563; /* Cor do texto */
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px; /* Aumentar o espaço entre os checkboxes */
+  text-align: left;
+  font-size: 16px; /* Aumentar o tamanho da fonte */
+  margin-bottom: 16px;
+}
+
+button#gen {
+  background-color: #3b82f6; /* Cor do botão */
+  color: white;
+  padding: 12px 20px; /* Aumentar o padding do botão */
+  border: none;
+  border-radius: 6px; /* Bordas mais arredondadas */
+  cursor: pointer;
+  font-size: 16px; /* Aumentar o tamanho da fonte */
+  transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+button#gen:hover {
+  background-color: #2563eb; /* Cor do botão ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+button#gen:active {
+  transform: translateY(0); /* Retornar ao normal ao clicar */
+}

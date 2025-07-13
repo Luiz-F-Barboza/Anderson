@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senhas</h1>
+    <input id="output" class="campo-saida" readonly>
+
+    <input type="range" id="length" min="8" max="32" value="16">
+    <p class="info-tamanho">Tamanho: <span id="length-val">16</span></p>
+
+    <div class="checkboxes">
+      <label><input type="checkbox" id="upper" checked> Maiúsculas</label>
+      <label><input type="checkbox" id="lower" checked> Minúsculas</label>
+      <label><input type="checkbox" id="nums" checked> Números</label>
+      <label><input type="checkbox" id="syms" checked> Símbolos</label>
+    </div>
+
+    <button id="gen">Gerar</button>
+    <button onclick="mudarparaDark()">Modo Escuro</button>
+    <button onclick="mudarparaWhite()">Modo Claro</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
