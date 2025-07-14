@@ -3,19 +3,19 @@ const cadastro = document.getElementById('cadastroForm');
 cadastro.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  // Coleta os valores dos campos
+  
   const nome = document.getElementById('nome').value.trim();
   const email = document.getElementById('email').value.trim();
   const senha = document.getElementById('senha').value.trim();
   const confirmarSenha = document.getElementById('confirmarSenha').value.trim();
 
-  // Elementos de erro
+  
   const nomeError = document.getElementById('nomeError');
   const emailError = document.getElementById('emailError');
   const senhaError = document.getElementById('senhaError');
   const confirmarSenhaError = document.getElementById('confirmarSenhaError');
 
-  // Limpa os erros anteriores
+  
   nomeError.textContent = '';
   emailError.textContent = '';
   senhaError.textContent = '';
@@ -23,7 +23,7 @@ cadastro.addEventListener('submit', function (e) {
 
   let valido = true;
 
-  // Validação
+  
   if (nome === '') {
     nomeError.textContent = 'Por favor, informe seu nome.';
     valido = false;
@@ -50,12 +50,12 @@ cadastro.addEventListener('submit', function (e) {
 
   const users = [];
 
-  // Salva os dados no localStorage
   
+
   const usuario = {
     nome: nome,
     email: email,
-    senha: senha // Obs: em app real, nunca salve senhas assim
+    senha: senha 
   };
 
   users.push('usuario');
