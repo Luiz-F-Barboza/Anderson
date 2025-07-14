@@ -15,4 +15,4 @@ Anderson tem me auxiliado **de forma totalmente voluntária**, com muita paciên
 
 ## 📁 Estrutura do Repositório
 
-> > L.A.S <
++ L.A.S +
