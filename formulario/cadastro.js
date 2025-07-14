@@ -48,12 +48,17 @@ cadastro.addEventListener('submit', function (e) {
     return
   };
 
+  const users = [];
+
   // Salva os dados no localStorage
+  
   const usuario = {
     nome: nome,
     email: email,
     senha: senha // Obs: em app real, nunca salve senhas assim
   };
+
+  users.push('usuario');
 
   localStorage.setItem('usuarioCadastrado', JSON.stringify(usuario));
 
