@@ -58,12 +58,14 @@ cadastro.addEventListener('submit', function (e) {
     senha: senha 
   };
 
-  users.push('usuario');
+  users.push(usuario);
+
+  console.log(users);
 
   localStorage.setItem('usuarioCadastrado', JSON.stringify(usuario));
 
   alert('Cadastro realizado com sucesso!');
-  window.location.href = 'login.html';
+  // window.location.href = 'login.html';
 });
 
 // L.A.S
